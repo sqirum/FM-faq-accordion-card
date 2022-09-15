@@ -13,3 +13,14 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+
+main {
+    max-width: 920px;
+    background-color: white;
+    border-radius: 23px;
+    display: flex;
+}
+
+main .image .woman-online-desktop {
+    width: 100%;
+}
