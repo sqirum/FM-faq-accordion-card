@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
 }
 
 main {
@@ -19,8 +20,27 @@ main {
     background-color: white;
     border-radius: 23px;
     display: flex;
+    padding: 75px 0;
+    align-items: center;
+}
+
+main .image {
+    flex: 1;
 }
 
 main .image .woman-online-desktop {
     width: 100%;
+}
+
+main .accordion-wrapper h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin-bottom: 41px;
+}
+
+main .accordion-wrapper {
+    flex: 1;
+    margin: 0 95px;
 }
