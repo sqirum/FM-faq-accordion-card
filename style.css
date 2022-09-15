@@ -44,3 +44,22 @@ main .accordion-wrapper {
     flex: 1;
     margin: 0 95px;
 }
+
+main .accordion-group .accordion-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .accordion-group .accordion-btn a {
+    text-decoration: none;
+    color: #4B4C5F;
+    font-weight: 14px;
+    line-height: 17px;
+    font-weight: 400;
+}
+
+main .accordion-group .accordion-btn img {
+    width: 100%;
+    max-width: 8px;
+}
