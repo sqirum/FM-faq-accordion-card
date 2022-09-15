@@ -26,10 +26,28 @@ main {
 
 main .image {
     flex: 1;
+    position: relative;
 }
 
 main .image .woman-online-desktop {
     width: 100%;
+    transform: translateX(-20%);
+}
+
+main .image .desktop-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+main .image .desktop-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateY(50%) translateX(-50%);
 }
 
 main .accordion-wrapper h1 {
@@ -74,6 +92,14 @@ main .accordion-group .accordion-btn img {
 
 main .accordion-group .accordion-list {
     list-style-type: none;
+    height: auto;
+    opacity: 1;
+    transition: all 500ms ease-out;
+}
+
+main .accordion-group .accordion-list.collapse {
+    height: 0;
+    opacity: 0;
 }
 
 main .accordion-group .accordion-list li {
