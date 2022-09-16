@@ -110,3 +110,11 @@ main .accordion-group .accordion-list li {
     padding-bottom: 16px;
     padding-top: 10px;
 }
+
+.rotate > img {
+    transform: rotate(180deg);
+}
+
+.d-none {
+    display: none;
+}
