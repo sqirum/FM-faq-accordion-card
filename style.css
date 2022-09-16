@@ -36,10 +36,10 @@ main .image .woman-online-desktop {
 
 main .image .desktop-pattern {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: -40%;
+    top: -40%;
     z-index: 1;
-    width: 100%;
+    width: 130%;
 }
 
 main .image .desktop-box {
@@ -63,12 +63,16 @@ main .accordion-wrapper {
     margin: 0 95px;
 }
 
+main .accordion-group {
+    margin-top: 16px;
+}
+
 main .accordion-group .accordion-btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #E8E8EA;
 }
 
@@ -92,17 +96,10 @@ main .accordion-group .accordion-btn img {
 
 main .accordion-group .accordion-list {
     list-style-type: none;
-    height: auto;
-    opacity: 1;
     transition: all 500ms ease-out;
 }
 
-main .accordion-group .accordion-list.collapse {
-    height: 0;
-    opacity: 0;
-}
-
-main .accordion-group .accordion-list li {
+main .accordion-group .accordion-list {
     color:#787887;
     font-size: 12px;
     font-weight: 400;
@@ -111,10 +108,18 @@ main .accordion-group .accordion-list li {
     padding-top: 10px;
 }
 
+
+
+
+/* Utility Classes */
 .rotate > img {
     transform: rotate(180deg);
 }
-
-.d-none {
+.overflow-wrapper {
+    overflow: hidden;
+}
+.collapse {
+    height: 0;
+    opacity: 0;
     display: none;
 }
