@@ -94,6 +94,11 @@ main .accordion-group .accordion-btn img {
     max-width: 8px;
 }
 
+main .accordion-group .accordion-btn.rotate a {
+    color: #1E1F36;
+    font-weight: 700;
+}
+
 main .accordion-group .accordion-list {
     list-style-type: none;
     transition: all 500ms ease-out;
@@ -108,9 +113,6 @@ main .accordion-group .accordion-list {
     padding-top: 10px;
 }
 
-
-
-
 /* Utility Classes */
 .rotate > img {
     transform: rotate(180deg);
@@ -123,3 +125,43 @@ main .accordion-group .accordion-list {
     opacity: 0;
     display: none;
 }
+
+@media only screen and (max-width: 768px) {
+    main {
+        max-width: 327px;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 48px;
+    }
+    main .accordion-wrapper {
+        margin: 0 25px;
+    }
+    main .image .woman-online-desktop {
+        transform: translateX(0);
+        width: 70%;
+        transform: translateY(-60%);
+    }
+    main .accordion-wrapper h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    main .image .desktop-pattern {
+        left: 15%;
+        top: -200%;
+        width: 70%;
+    }
+    .overflow-wrapper {
+        text-align: center;
+        overflow: inherit;
+        height: 60px;
+    }
+    main .image .desktop-box {
+        left: 25%;
+        top: -175%;
+        width: 35%;
+    }
+}
+
+
+
+
